@@ -6,7 +6,6 @@
     height: calc(100vh - 76px);
     padding-top: 100px;
     justify-content: space-between;
-
 }
 
 .container.hero .info {
@@ -91,4 +90,12 @@
     right: -58px;
     bottom: 0;
     height: 600px;
+}
+
+@media (max-width:1399px) {
+    .right-side .car {
+        width: 580px;
+        height: 500px;
+        right: -80px;
+    }
 }
