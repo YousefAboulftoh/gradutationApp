@@ -1,4 +1,4 @@
-import car from "../img/hero.png"
+import car from "../img/car.webp"
 import { motion } from 'framer-motion';
 import "../Css/herocontent.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
