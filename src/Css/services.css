@@ -1,0 +1,87 @@
+.services {
+    padding: 80px 0;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    max-width: 100%;
+}
+
+.services .content {
+    flex: 1;
+}
+
+.services .content h1 {
+    font-weight: bold;
+    color: var(--main-color);
+
+}
+
+
+@media (max-width:991px) {
+    .services .container {
+        flex-direction: column;
+    }
+
+    .services .content {
+        text-align: center;
+    }
+}
+
+/* Button style in hero content with explore btn */
+.serv {
+    transition: 0.5s;
+    padding: 10px;
+    border: 3px solid transparent;
+    border-radius: 6px;
+}
+
+@media (max-width:991px) {
+    .serv {
+        flex-direction: column;
+    }
+}
+
+.serv:hover {
+    border-color: var(--sec-color);
+}
+
+.serv .icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+    box-shadow: 0 0 5px 0 #eee;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.serv .icon svg {
+    color: var(--main-color);
+    font-size: 25px;
+}
+
+.serv:hover .icon {
+    background-color: var(--sec-color);
+}
+
+.serv:hover .icon svg {
+    color: white;
+}
+
+.serv .info h2 {
+    color: var(--sec-color);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.serv .info p {
+    max-width: 400px;
+    color: #777;
+    line-height: 1.6;
+}

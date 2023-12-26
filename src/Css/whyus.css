@@ -1,0 +1,72 @@
+.why-us {
+    padding: 80px 0;
+}
+
+.why-us .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+    text-align: center;
+}
+
+.main-heading {
+    width: fit-content;
+    margin: 0 auto 75px;
+    position: relative;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.main-heading::before {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 50px;
+    width: calc(100% - 100px);
+    height: 2px;
+    background-color: var(--main-color);
+}
+
+.why-us .box:nth-child(2) {
+    box-shadow: 0 0 10px 0 #eee;
+    border-radius: 10px;
+}
+
+.why-us .box .icon {
+    width: 60px;
+    height: 60px;
+    color: var(--sec-color);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.why-us .box h2 {
+    color: var(--main-color);
+}
+
+.why-us .box p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #777;
+}
+
+.scroll {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--sec-color);
+    color: white;
+    border-radius: 6px;
+    bottom: 40px;
+    right: 50px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.scroll.active {
+    opacity: 1;
+}

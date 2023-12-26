@@ -1,0 +1,20 @@
+.auto-slide {
+    padding: 30px 0;
+}
+
+.auto-slide img {
+    width: 150px !important;
+}
+
+@media (max-width:667px) {
+    .auto-slide img {
+        width: 100px !important;
+        height: 70px;
+    }
+}
+
+.auto-slide .slick-next::before,
+.auto-slide .slick-prev::before {
+    display: none;
+
+}

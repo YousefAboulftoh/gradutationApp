@@ -1,0 +1,94 @@
+.hero-content {
+    padding-bottom: 80px;
+}
+
+.container.hero {
+    height: calc(100vh - 76px);
+    padding-top: 100px;
+    justify-content: space-between;
+
+}
+
+.container.hero .info {
+    width: 400px;
+}
+
+.container.hero .info h1 {
+    text-transform: capitalize;
+    font-size: 45px;
+}
+
+.container.hero .info p {
+    color: #777;
+    line-height: 1.8;
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+.explore {
+    position: relative;
+    background-color: transparent;
+    border: 1px solid var(--sec-color);
+    padding: 10px 35px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.explore::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+    border-radius: 6px;
+    z-index: -10;
+}
+
+.explore:hover {
+    color: white;
+}
+
+.explore:hover:before {
+    background-color: var(--main-color);
+    width: 100%;
+}
+
+.social .icon {
+    width: 40px;
+    height: 30px;
+    color: var(--sec-color);
+    padding-right: 15px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social .icon:hover {
+    color: var(--main-color);
+}
+
+.right-side {
+    background-color: var(--sec-color);
+    position: absolute;
+    top: 0;
+    right: 60px;
+    height: 100%;
+    width: 450px;
+}
+
+@media (max-width:991px) {
+    .right-side {
+        display: none;
+    }
+}
+
+.right-side .car {
+    width: 700px;
+    position: absolute;
+    right: -58px;
+    bottom: 0;
+    height: 600px;
+}

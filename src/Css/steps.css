@@ -1,0 +1,22 @@
+.step .icon {
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    font-size: 40px;
+    color: var(--sec-color);
+    border-radius: 6px;
+    border: 4px solid white;
+    background: #f6f6f6;
+    box-shadow: 0 0 14px 0 #eee;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.step .icon:hover,
+.step .icon.active {
+    background-color: var(--sec-color);
+    color: white;
+}

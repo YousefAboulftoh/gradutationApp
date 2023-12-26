@@ -1,0 +1,77 @@
+.navbar {
+
+    box-shadow: 0 0 10px 0px #ccc;
+}
+
+.navbar .container {
+    padding: 10px 0;
+}
+
+.navbar-nav {
+    width: 350px;
+    justify-content: space-between;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+}
+
+.navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--main-color);
+    left: 0;
+    transition: 0.5s;
+}
+
+.navbar-nav .nav-link:hover:before {
+    width: 100%;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--main-color) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--main-color);
+}
+
+.logo-name {
+    color: var(--sec-color);
+}
+
+.navbar-toggler {
+    border-color: var(--sec-color) !important;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.sign-in {
+    background-color: var(--main-color);
+    color: white;
+    text-transform: capitalize;
+    padding: 5px 20px;
+    border-radius: 6px;
+    transition: .5s;
+    font-size: 18px;
+    border: 1px solid var(--main-color);
+}
+
+.sign-in:hover {
+    background-color: transparent;
+    color: var(--main-color);
+}
+
+.theme {
+    color: var(--main-color);
+    padding: 10px;
+    border: none;
+    background: transparent;
+}

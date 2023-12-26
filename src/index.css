@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* transition: 0.5s; */
+    font-family: 'Raleway', sans-serif !important
+}
+
+:root {
+    --main-color: #16588E;
+    --sec-color: #81C4FF;
+}
